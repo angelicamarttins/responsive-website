@@ -150,7 +150,7 @@ main{
 /* Images */
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .img-other {
@@ -239,7 +239,7 @@ footer {
     top: 5em;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 735px) {
     
     /* Menu */
 
@@ -276,6 +276,7 @@ footer {
     .sidebar {
         width: 25%;
         margin: 3.5em 2em;
+        min-width: 200px;
     }
 
     /* Other articles */
