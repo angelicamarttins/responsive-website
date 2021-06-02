@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Variables */
+
+:root {
+    --dark-blue: #143774;
+    --light-blue: #1792D2;
+    --dark-gray: #707070;
+    --light-gray: rgba(255, 255, 255, 0.54);
+    --border: #EBEBEB;
+}
+
+/* Typography */
+
+.title h1 {
+    font: 2rem 'Lora', serif;
+    margin: 0 auto;
+    color: var(--dark-gray);
+}
+
+.subtitle {
+    font: bold .75rem 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    color: var(--light-blue);
+    text-align: center;
+    letter-spacing: 2.4px;
+}
+
+.nav a{
+    font: bold 1rem 'Ubuntu', sans-serif;
+    color: var(--dark-gray);
+    display: block;
+    padding: 0.25em;
+}
+
+.h2 {
+    color: var(--dark-blue);
+    font: 1.5rem 'Lora', serif;
+}
+
+.continue-reading {
+    color: var(--light-blue);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.main-article p, .other-articles p {
+    margin: 1em 0;
+    text-align: justify;
+    color: var(--dark-gray);
+    line-height: 30px;
+    font-size: 1.10rem;
+}
+
+.about-me h1 {
+    color: var(--dark-blue);
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+}
+
+.about-me a {
+    color: var(--dark-blue);
+    letter-spacing: 0;
+}
+
+.recent-posts a {
+    color:var(--dark-blue);
+    font: 1.25rem 'Lora', serif;
+}
+
+.recent-posts h1 {
+    color:var(--dark-blue);
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+}
+
+#title-footer {
+    color: var(--light-gray);
+    letter-spacing: 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+}
+
+#copyright {
+    color: var(--light-gray);
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 1.20rem;
+}
+
+/* Menu */
+
+header {
+    background-color: #f8f8f8;
+    padding: 2em;
+}
+
+.container-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;    
+}
+
+.nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.nav li {
+    margin: 1em auto;
+}
+
+.nav a:hover {
+    color: var(--light-blue);
+}
+
+#current-page {
+    border-bottom: 2px solid var(--dark-gray);
+}
+
+#current-page:hover {
+    color: var(--dark-gray);
+}
+
+/* Main */
+
+main{
+    width: 90%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
+.img-other {
+    margin: 3em 0 0 0 ;
+}
+
+figcaption {
+    color: var(--dark-gray);
+}
+
+.figcaption-other {
+    float: right;
+    margin: 0.25em 0;
+}
+
+.img-sidebar { 
+    margin-bottom: 2em;
+}
+
+.recent-posts img {
+    margin: 1em 0;
+}
+
+/* Articles */
+
+.other-articles {
+    margin: 1.5em 0;
+}
+
+.other-articles .h2 {
+    margin: 0.5em 0;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 90%;
+    margin: auto;
+}
+
+.sidebar p {
+    color: var(--light-blue);
+}
+
+.about-me {
+    border: 25px solid var(--border);
+    padding: 2em 2em 2em 2em;
+}
+
+.recent-posts {
+    border: 25px solid var(--border);
+    padding: 2em;
+    margin: 4em 0;
+}
+
+.recent-posts hr{
+    margin: 2em 0 1em 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-blue);
+    height: 30vh;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5em;
+}
+
+@media (min-width: 675px) {
+    
+    /* Menu */
+
+    .container-header {
+        flex-flow: row wrap;
+    }
+
+    .nav ul {
+        flex-flow: row wrap;
+    }
+
+    .nav li {
+        margin: 0 1em;
+    }
+
+    /* Main */
+
+    .container-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+        width: 75%;
+        margin: 0 2em;
+    }
+
+    /* Sidebar */
+
+    .sidebar {
+        width: 25%;
+        margin: 3.5em 2em;
+    }
+
+    /* Other articles */
+
+    .first-article, .article-one, .article-two, .article-three{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .first-article div, .article-one div, .article-two div, .article-three div{
+        padding: 2em 0;
+        margin: 0 2em;
+    }
+
+    .figcaption-other {
+        margin: 0;
+        box-sizing: border-box;
+        width: 198px;
+    }
+
+}
